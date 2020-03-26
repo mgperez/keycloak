@@ -48,3 +48,14 @@ It will create realm, clients, roles and users for you (Demo purpose). You can c
 
 - [Admin REST API](https://www.keycloak.org/docs/latest/server_development/#admin-rest-api)
 
+```
+# Get Token
+curl --location --request POST 'http://localhost:9090/auth/realms/spring-boot-quickstart/protocol/openid-connect/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic YXBwLWF1dGh6LXJlc3Qtc3ByaW5nYm9vdDpzZWNyZXQ=' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'username=alice' \
+--data-urlencode 'password=alice' \
+--data-urlencode 'grant_type=password'
+```
+
