@@ -2,18 +2,34 @@
 
 ```
 # Running
-% docker-compose -f "docker-compose.keycloak-postgres.yml" -p keycloak_registry_tuto up -d 
+% docker-compose -f "docker-compose.keycloak-postgres.yml" config
+% docker-compose -f "docker-compose.keycloak-postgres.yml" config --volumes 
+% docker-compose -f "docker-compose.keycloak-postgres.yml" up -d 
+Creating network "keycloak_backend" with driver "bridge"
+
 
 # Stopping containers and cleaning
-% docker-compose -p keycloak_registry_tuto down 
+% docker-compose down 
 ```
 
 To see what is currently running:
 
 ```
-% docker-compose -p keycloak_registry_tuto ps 
-% docker-compose -p keycloak_registry_tuto logs -f keycloak 
+% docker-compose ps 
+% docker-compose logs -f keycloak 
 ```
+
+### Networking in Compose
+
+https://docs.docker.com/compose/networking/
+
+https://runnable.com/docker/docker-compose-networking
+
+https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+
+https://devhints.io/docker-compose
+
+
 
 ### Welcome to Keycloak
 
