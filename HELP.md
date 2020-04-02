@@ -26,4 +26,6 @@ https://github.com/keycloak/keycloak-containers
 
 https://github.com/ncarlier/kong-integration-samples/blob/master/docker-compose.keycloak.yml
 
+- [Reverse-Proxy entry](https://medium.com/@wilson.wilson/manage-docker-registry-auth-with-keycloak-e0b4356cf7d0)
 
+#Share the directory from the host to the container with RW mode to store database's data

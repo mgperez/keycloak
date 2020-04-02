@@ -9,13 +9,13 @@ Creating network "keycloak_backend" with driver "bridge"
 
 
 # Stopping containers and cleaning
-% docker-compose down 
+% docker-compose -f "docker-compose.keycloak-postgres.yml" down 
 ```
 
 To see what is currently running:
 
 ```
-% docker-compose ps 
+% docker-compose -f "docker-compose.keycloak-postgres.yml" ps 
 % docker-compose logs -f keycloak 
 ```
 
