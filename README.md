@@ -1,21 +1,21 @@
 ### Running
 
 ```
+% docker-compose config
+% docker-compose config --volumes 
+
 # Running
-% docker-compose -f "docker-compose.keycloak-postgres.yml" config
-% docker-compose -f "docker-compose.keycloak-postgres.yml" config --volumes 
-% docker-compose -f "docker-compose.keycloak-postgres.yml" up -d 
+% docker-compose up -d 
 Creating network "keycloak_backend" with driver "bridge"
 
-
 # Stopping containers and cleaning
-% docker-compose -f "docker-compose.keycloak-postgres.yml" down 
+% docker-compose down 
 ```
 
 To see what is currently running:
 
 ```
-% docker-compose -f "docker-compose.keycloak-postgres.yml" ps 
+% docker-compose ps 
 % docker-compose logs -f keycloak 
 ```
 
@@ -75,3 +75,6 @@ curl --location --request POST 'http://localhost:9090/auth/realms/spring-boot-qu
 --data-urlencode 'grant_type=password'
 ```
 
+- [What Is Keycloak?](https://www.baeldung.com/spring-boot-keycloak)
+
+  
